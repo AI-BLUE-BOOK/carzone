@@ -3,6 +3,8 @@ from datetime import datetime
 from ckeditor.fields import RichTextField
 from multiselectfield import MultiSelectField
 
+###from django_multiselectfield import MultiSelectField
+
 # Create your models here.
 class Car(models.Model):
 
