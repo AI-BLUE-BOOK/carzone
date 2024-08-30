@@ -28,7 +28,7 @@ DEBUG = True
 
 ###ALLOWED_HOSTS = ['floating-badlands-41165.herokuapp.com', 'carzoneapp.co', 'www.carzoneapp.co']
 
-ALLOWED_HOSTS = ['.vercel.app' , '.now.sh']
+ALLOWED_HOSTS = ['.vercel.app' , '.now.sh','127.0.0.1']
 ###LOGIN_REDIRECT_URL = 'dashboard'
 
 
@@ -144,7 +144,7 @@ SITE_ID = 1
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'carzone/static'),
 ]
