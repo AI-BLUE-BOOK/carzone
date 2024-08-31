@@ -1,4 +1,12 @@
 {
+    "scripts": {
+
+  "prebuild": "pip install -r requirements.txt",
+
+  "build": "vercel build"
+
+    },
+
     "builds": [{
       "src": "carzone/wsgi.py",
       "use": "@vercel/python",
